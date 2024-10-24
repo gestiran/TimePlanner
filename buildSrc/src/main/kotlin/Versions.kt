@@ -37,9 +37,9 @@ object Versions {
 
     const val voyager = "1.0.0-rc10"
 
-    const val dagger = "2.44.2"
+    const val dagger = "2.52"
 
-    const val room = "2.5.0"
+    const val room = "2.6.1"
 
     const val retrofit = "2.9.0"
     const val okHttp = "4.10.0"

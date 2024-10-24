@@ -27,9 +27,9 @@ import ru.aleshin.core.domain.entities.settings.ThemeType
  */
 @Entity(tableName = "ThemeSettings")
 data class ThemeSettingsEntity(
-    @PrimaryKey(autoGenerate = false) val id: Int = 0,
-    @ColumnInfo("language") val language: LanguageType = LanguageType.DEFAULT,
-    @ColumnInfo("theme_colors") val themeColors: ThemeType = ThemeType.DEFAULT,
-    @ColumnInfo("colors_type") val colorsType: ColorsType = ColorsType.PINK,
-    @ColumnInfo("dynamic_color") val isDynamicColorEnable: Boolean = false,
+    @PrimaryKey(autoGenerate = false) var id: Int = 0,
+    @ColumnInfo("language") var language: LanguageType = LanguageType.DEFAULT,
+    @ColumnInfo("theme_colors") var themeColors: ThemeType = ThemeType.DEFAULT,
+    @ColumnInfo("colors_type") var colorsType: ColorsType = ColorsType.PINK,
+    @ColumnInfo("dynamic_color") var isDynamicColorEnable: Boolean = false,
 )
